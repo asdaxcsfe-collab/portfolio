@@ -112,6 +112,51 @@ section:hover {
 .contact-btn:hover {
     background: #5a53e6;
 }
+/* 作品集卡片布局 */
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card p {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+}
+.qrcode {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.qrcode img {
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
 
 
 
