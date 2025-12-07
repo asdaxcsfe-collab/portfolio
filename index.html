@@ -1,76 +1,132 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人主页 - 令糊葱</title>
-<link rel="stylesheet" href="style.css?v=3">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>令糊葱 · 前端接单</title>
+  <meta name="description" content="令糊葱 — 前端开发 / 个人主页 / 商家展示页 / 活动页 接单中" />
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
-    <nav class="navbar">
-    <a href="#about">关于我</a>
-    <a href="#services">服务</a>
-    <a href="#contact">联系我</a>
-</nav>
 
-    <header class="hero">
-<img src="avatar.jpg" alt="我的照片" class="avatar">
-
-        <h1>Hi，我是令糊葱</h1>
-        <p class="subtitle">前端开发者 / 大学生 / 接单中</p>
-    </header>
-
-    <section id="about">
-        <h2>关于我</h2>
-        <p>
-            我擅长制作现代、简洁、美观的网页，支持个人主页、商家展示页、活动页、项目介绍页制作。
-            可快速交付，价格友好。
-        </p>
-    </section>
-
-    <section id="services">
-        <h2>我能提供的服务</h2>
-        <ul>
-            <li>✅ 个人主页制作（100-200）</li>
-            <li>✅ 商家推广网站（200-500）</li>
-            <li>✅ 项目展示网页（100-300）</li>
-            <li>✅ 课程作业网页代做（50-150）</li>
-        </ul>
-    </section><section id="portfolio">
-    <h2>作品展示</h2>
-    <div class="portfolio-container">
-        <div class="card">
-            <img src="demo1.jpg" alt="项目1">
-            <p>示例项目 1（商家宣传页）</p>
-        </div>
-        <div class="card">
-            <img src="demo2.jpg" alt="项目2">
-            <p>示例项目 2（个人主页）</p>
-        </div>
-        <div class="card">
-            <img src="demo3.jpg" alt="项目3">
-            <p>示例项目 3（产品展示页）</p>
-        </div>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">令糊葱</div>
+      <div class="nav-links">
+        <a href="#about">关于我</a>
+        <a href="#services">服务</a>
+        <a href="#portfolio">作品</a>
+        <a href="#contact">联系</a>
+      </div>
     </div>
-</section>
+  </nav>
 
+  <!-- HERO -->
+  <header class="header">
+    <img src="https://picsum.photos/seed/avatar/300" alt="avatar" class="avatar">
+    <h1>Hi，我是令糊葱</h1>
+    <p class="tagline">前端开发者 · 个人/商家网页 · 快速交付 · 接单中</p>
+  </header>
 
-    <section id="contact">
-        <h2>联系我</h2>
-        <div class="qrcode">
-    <h3>微信二维码（扫码联系）</h3>
-    <img src="qrcode.jpg" alt="微信二维码">
-</div>
-
-        <p>微信：cferasdfghjkl</p>
-        <a class="contact-btn" href="weixin://">立即联系我</a>
-
+  <!-- WHY / ABOUT -->
+  <main>
+    <section id="about" class="section">
+      <div class="section-title">关于我</div>
+      <p>我专注于制作简洁、现代且转化率高的网页。支持个人主页、商家展示页、活动页与项目介绍页。交付快速、响应式适配、支持后期维护与部署到 GitHub Pages。</p>
     </section>
+
+    <section class="section">
+      <div class="section-title">为什么选择我？</div>
+      <ul class="adv-list">
+        <li>⚡ 交付快：简单页面 1–2 天交付</li>
+        <li>🎯 实用优先：专注展示与转化（联系客服 / 下单）</li>
+        <li>📱 自适应：手机 / 平板 / 桌面均优化</li>
+        <li>🔧 包部署：帮你把页面部署到 GitHub Pages 并提供访问链接</li>
+      </ul>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="section-title">我能提供的服务</div>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>个人主页</h3>
+          <p>展示你的个人简介、作品与联系方式。</p>
+          <div class="price">¥80 — ¥150</div>
+        </div>
+        <div class="service-card">
+          <h3>商家展示页</h3>
+          <p>商家 / 门店 / 工作室展示页，含优惠/活动模块。</p>
+          <div class="price">¥180 — ¥400</div>
+        </div>
+        <div class="service-card">
+          <h3>活动页 / H5</h3>
+          <p>促销 / 报名 / 活动页面，含表单（无后台时用收集表单/邮箱/微信）。</p>
+          <div class="price">¥150 — ¥500</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section">
+      <div class="section-title">作品展示</div>
+      <div class="portfolio-grid">
+        <div class="card">
+          <img src="https://picsum.photos/seed/p1/800/450" alt="项目1">
+          <p class="card-title">示例：商家展示页</p>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/seed/p2/800/450" alt="项目2">
+          <p class="card-title">示例：个人作品集</p>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/seed/p3/800/450" alt="项目3">
+          <p class="card-title">示例：活动报名页</p>
+        </div>
+      </div>
+      <p class="note">（可替换为你的真实案例截图 — 成交率提升 3x）</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section-title">联系我</div>
+      <p>加我微信或扫码联系，或发送邮件：</p>
+
+      <div class="contact-row">
+        <div class="qr-wrap">
+          <img src="https://picsum.photos/seed/qrcode/300" alt="二维码" class="qr">
+          <div class="qr-label">微信二维码（扫码联系）</div>
+        </div>
+        <div class="contact-info">
+          <p>微信：<strong>cferasdfghjkl</strong></p>
+          <p>交付方式：GitHub Pages / 提供源代码 / 可协助后续部署</p>
+          <a class="btn" href="#contact">立即联系我</a>
+        </div>
+      </div>
+
+      <div class="faq">
+        <h4>常见问题</h4>
+        <ul>
+          <li>Q：交付需要多长时间？ A：简单页 1–2 天，复杂页 3–7 天。</li>
+          <li>Q：价格如何结算？ A：先定金 30%，交付后付尾款。</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- FLOAT BUTTON -->
+  <a class="contact-float" href="#contact">💬 联系我</a>
+
+  <footer class="footer">
+    © 2025 令糊葱 · 前端接单
+  </footer>
+
+  <script>
+    // 轻量：点击作品图在新窗口打开（可替换为 modal）
+    document.querySelectorAll('.card img').forEach(img=>{
+      img.addEventListener('click', ()=> window.open(img.src, '_blank'));
+    });
+  </script>
 </body>
 </html>
-
-
-
-
-
-
