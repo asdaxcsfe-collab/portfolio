@@ -1,105 +1,106 @@
+/* 全局 */
 body {
     margin: 0;
-    font-family: Arial;
-    background: #f7f7f7;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: #f5f7fa;
+    color: #1a1a1a;
+    line-height: 1.6;
 }
 
 /* 顶部横幅 */
-.hero {
+.header {
+    background: linear-gradient(135deg, #4da0ff, #0072ff);
+    padding: 60px 20px;
     text-align: center;
-    padding: 50px 20px;
-    background: linear-gradient(120deg, #6c63ff, #52ddf6);
     color: white;
 }
 
-/* 头像优化 */
-.avatar {
-    width: 140px;
-    height: 140px;
+.header img {
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid white;
-    box-shadow: 0 0 20px rgba(255,255,255,0.4);
-    transition: transform .25s;
+    border: 4px solid rgba(255,255,255,0.7);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-.avatar:hover {
-    transform: scale(1.08);
+.header h1 {
+    margin-top: 15px;
+    font-size: 32px;
+    font-weight: 700;
 }
 
-/* 区块公共样式 */
-section {
+.header p {
+    opacity: 0.9;
+}
+
+/* 容器卡片（苹果白） */
+.section {
+    width: 80%;
+    max-width: 850px;
+    margin: 30px auto;
     background: white;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 12px;
-    width: 90%;
-    max-width: 600px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 30px;
+    border-radius: 22px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    transition: all 0.25s ease;
 }
 
-/* 标题下划线 */
-h2 {
-    width: fit-content;
-    margin: 0 auto 20px;
-    border-bottom: 2px solid #6c63ff;
-    padding-bottom: 5px;
+.section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.1);
 }
 
-/* 服务列表 */
-.services ul {
-    padding: 0;
+/* 标题样式（极简） */
+.section-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e5e5e5;
+    width: max-content;
 }
 
-.services li {
-    list-style: none;
-    margin-bottom: 10px;
-    font-size: 16px;
+/* 列表对齐 */
+ul {
+    padding-left: 20px;
 }
 
-/* --- 作品展示三列布局 --- */
-.portfolio-grid {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
+li {
+    margin-bottom: 8px;
 }
 
-.portfolio .item {
-    background: white;
-    border-radius: 12px;
-    padding: 15px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
-    transition: transform .2s;
-}
-
-.portfolio .item:hover {
-    transform: translateY(-5px);
-}
-
-.portfolio .item img {
+/* 作品展示图片 */
+.work-img {
     width: 100%;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 10px;
+    max-width: 360px;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    margin-bottom: 10px;
 }
 
-/* 悬浮联系按钮 */
-.contact-float {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    background: #6c63ff;
+/* 联系我 */
+.qr {
+    width: 150px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* 按钮（苹果风） */
+.btn {
+    display: inline-block;
+    background: #0072ff;
+    padding: 12px 22px;
     color: white;
-    padding: 12px 20px;
-    border-radius: 50px;
-    font-size: 16px;
+    border-radius: 12px;
     text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    font-size: 16px;
+    margin-top: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: 0.25s;
 }
 
-
-
-
-
-
+.btn:hover {
+    background: #005ce6;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.20);
+    transform: translateY(-2px);
+}
